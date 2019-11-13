@@ -64,19 +64,7 @@ a.href {
 	color: #ffffff;
 }
 
-.content {
-	padding-top: 120px;
-	margin-left: 8.5%;
-	margin-right: 8.5%;
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-}
-
-.content img {
-	width: 25%;
-	height: 25%;
-}
+/*	Hero Section */
 
 .hero-section {
 	width: 100%;
@@ -107,12 +95,26 @@ a.href {
 	font-weight: 700;
 }
 
+/*	Content Section	*/
+
+.content {
+	padding-top: 120px;
+	margin-left: 8.5%;
+	margin-right: 8.5%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.content img {
+	width: 25%;
+	height: 25%;
+}
+
 .infoSection {
 	align-content: center;
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
-	/*margin-left: 10%;
-	margin-right: 10%;*/
 	margin-top: -123px;
 }
 
@@ -147,12 +149,13 @@ a.red {
 	border: 0;
 }
 
+/*	Footer Section	*/
+
 .footerWrapper {
 	position: relative;
 	overflow-x: hidden;
 	display: contents;
 	width: 100vw;
-	/*align-content: center;*/
 }
 
 .columnLeft {
