@@ -35,6 +35,7 @@ a.href {
 .navBar a {
 	font-size: 20px;
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
 	text-decoration: none;
 	vertical-align: middle;
 	color: #ffffff;
@@ -86,12 +87,29 @@ a.href {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.hero-section .hero-section-text h1 {
+	font-weight: 700;
+}
+
 .infoSection {
 	align-content: center;
 	text-align: center;
+	font-family: 'Montserrat', sans-serif;
 	/*margin-left: 10%;
 	margin-right: 10%;*/
 	margin-top: -123px;
+}
+
+.infoSection h1 {
+	font-weight: 700;
+}
+
+.infoSection h4 {
+	font-weight: 600:
+}
+
+.infoSection p {
+	font-weight: 100;
 }
 
 a.red {
@@ -118,10 +136,27 @@ a.red {
 	overflow-x: hidden;
 	display: contents;
 	width: 100vw;
+	/*align-content: center;*/
+}
+
+.columnLeft {
+	width: 33%;
 	align-content: center;
 }
 
+.columnCenter {
+	width: 33%;
+	align-content: center;
+}
+
+.columnRight {
+	width: 33%;
+	align-content: center;
+	vertical-align: middle;
+}
+
 .footer {
+	display: flex;
 	position: absolute;
 	width: 100%;
 	margin-left: -8px;
@@ -130,8 +165,24 @@ a.red {
 	background-color: #222222;
 	color: white;
 	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	align-content: center;
+	align-items: center;
 }
 
-.footer p {
-	vertical-align: middle;
+.footer .social {
+	color: #ffffff;
+}
+
+.columnRight a:visited {
+	color: #ffffff;
+}
+
+.columnRight a:link {
+	color: #ffffff;
+}
+
+.columnRight a:hover {
+	color: #E42646;
 }
