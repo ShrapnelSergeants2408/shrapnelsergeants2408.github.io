@@ -48,6 +48,22 @@ a.href {
 	float: right;
 }
 
+.nav-rightSide a:link {
+	color: #ffffff;
+}
+
+.nav-rightSide a:visited {
+	color: #ffffff;
+}
+
+.nav-rightSide a:hover {
+	color: #E42646;
+}
+
+.nav-rightSide a.spacer:hover {
+	color: #ffffff;
+}
+
 .content {
 	padding-top: 120px;
 	margin-left: 8.5%;
@@ -105,11 +121,11 @@ a.href {
 }
 
 .infoSection h4 {
-	font-weight: 600:
+	font-weight: 600;
 }
 
 .infoSection p {
-	font-weight: 100;
+	font-weight: 300;
 }
 
 a.red {
