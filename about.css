@@ -1,0 +1,167 @@
+.body {
+	margin: 0;
+}
+
+a.href {
+	color: inherit;
+}
+
+.fixed {
+	position: fixed;
+	width: 100%;
+}
+
+.navbarBG {
+	background-color: #222222;
+	margin-left: -10px;
+	margin-top: -10px;
+}
+
+.navBar {
+	background-color: #222222;
+	overflow: hidden;
+	padding-left: 10px;
+	padding-top: 10px;
+	vertical-align: middle;
+}
+
+.navBar a.home img {
+	width: 60px;
+	height: 60px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+
+.navBar a {
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+	text-decoration: none;
+	vertical-align: middle;
+	color: #ffffff;
+}
+
+.nav-rightSide {
+	vertical-align: middle;
+	padding-top: 22px;
+	padding-right: 20px;
+	float: right;
+}
+
+.nav-rightSide a:link {
+	color: #ffffff;
+}
+
+.nav-rightSide a:visited {
+	color: #ffffff;
+}
+
+.nav-rightSide a:hover {
+	color: #E42646;
+}
+
+.nav-rightSide a.spacer:hover {
+	color: #ffffff;
+}
+
+
+.content {
+	padding-top: 120px;
+	margin-left: 8.5%;
+	margin-right: 8.5%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.content img {
+	width: 25%;
+	height: 25%;
+}
+
+.aboutTeam {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.aboutTeam h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #E42646;
+}
+
+.aboutTeam p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14pt;
+  text-align: center;
+}
+
+.aboutTeam a {
+  text-decoration: none;
+}
+
+.aboutTeam a:link {
+  color: #E42646;
+}
+
+.aboutTeam a:visited {
+	color: #E42646;
+}
+
+.footerWrapper {
+	position: relative;
+	overflow-x: hidden;
+	display: contents;
+	width: 100vw;
+}
+
+.columnLeft {
+	width: 33%;
+	align-content: center;
+}
+
+.columnCenter {
+	width: 33%;
+	align-content: center;
+}
+
+.columnRight {
+	width: 33%;
+	align-content: center;
+	vertical-align: middle;
+}
+
+.footer {
+	display: flex;
+	position: absolute;
+	width: 100%;
+	margin-left: -8px;
+	height: 60px;
+	clear: both;
+	background-color: #222222;
+	color: white;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	align-content: center;
+	align-items: center;
+}
+
+.footer .social {
+	color: #ffffff;
+}
+
+.columnRight a:visited {
+	color: #ffffff;
+}
+
+.columnRight a:link {
+	color: #ffffff;
+}
+
+.columnRight a:hover {
+	color: #E42646;
+}
