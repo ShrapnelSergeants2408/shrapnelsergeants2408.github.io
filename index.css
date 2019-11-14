@@ -64,12 +64,73 @@ a.href {
 	color: #ffffff;
 }
 
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  background-color: transparent;
+	margin-left: 0px;
+	margin-top: -1px;
+  color: white;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+  border: none;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: #E42646;
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdownMenu a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdownMenu a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdownMenu {
+  display: block;
+}
+
+.menuOption {
+	color: #222222 !important;
+}
+
+.menuOption a:link {
+	color: #222222 !important;
+}
+
+.menuOption a:visited {
+	color: #222222 !important;
+}
+
+.dropdownMenu a:hover {
+	color: #E42646 !important;
+}
+
 /*	Hero Section */
 
 .hero-section {
 	width: 100%;
-	background: linear-gradient(rgba(255, 0, 0, .5), rgba(0, 0, 255, .5)), url("https://github.com/ShrapnelSergeants2408/shrapnelsergeants2408.github.io/blob/master/robotics.JPG") 50% no-repeat;
-	background-image: url("robotics.jpg");
+	background: linear-gradient(rgba(255, 0, 0, .5), rgba(0, 0, 255, .5)), url("robotics.JPG") 50% no-repeat;
 	background-size: cover;
 	padding-right: 16px;
 	height: 67vh;
