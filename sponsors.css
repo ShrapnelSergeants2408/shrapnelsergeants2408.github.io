@@ -1,0 +1,293 @@
+.fixed {
+    position: fixed;
+    width: 100%;
+}
+
+.navbarBG {
+    background-color: #222222;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.navBar {
+    background-color: #222222;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-top: 10px;
+    vertical-align: middle;
+}
+
+.navBar a.home img {
+    width: 60px;
+    height: 60px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.navBar a {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+.nav-rightSide {
+    vertical-align: middle;
+    padding-top: 22px;
+    padding-right: 20px;
+    float: right;
+}
+
+.nav-rightSide a:link {
+    color: #ffffff;
+}
+
+.nav-rightSide a:visited {
+    color: #ffffff;
+}
+
+.nav-rightSide a:hover {
+    color: #E42646;
+}
+
+.nav-rightSide a.spacer:hover {
+    color: #ffffff;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    background-color: transparent;
+    margin-left: 0px;
+    margin-top: -1px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    border: none;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    color: #E42646;
+}
+
+.dropdownMenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdownMenu a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdownMenu a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdownMenu {
+    display: block;
+}
+
+.menuOption {
+    color: #222222 !important;
+}
+
+.menuOption a:link {
+    color: #222222 !important;
+}
+
+.menuOption a:visited {
+    color: #222222 !important;
+}
+
+.dropdownMenu a:hover {
+    color: #E42646 !important;
+}
+
+/* Sponsorship Section */
+.sponsorList {
+    display: grid;
+    position: static;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.DiamondSponsors {
+    margin-top: 25px;
+}
+
+.DiamondSponsors h1 {
+    color: #B3E6E2;
+    text-shadow: -1px 1px 3px #222222;
+}
+
+.DiamondSponsors hr {
+    width: 55%;
+    margin-bottom: -40px;
+}
+
+.DiamondSponsors img {
+    float: left;
+}
+
+.DiamondSponsors p {
+    vertical-align: middle;
+}
+
+.boeing img {
+    width: 300px;
+}
+
+.boeing h2 {
+    padding-top: 70px;
+}
+
+.PlatinumSponsors h1 {
+    margin-top: -35px;
+    color: #E5E4E2;
+    text-shadow: -1px 1px 3px #222222;
+}
+
+.PlatinumSponsors hr {
+    width: 55%;
+    margin-bottom: 35px;
+}
+
+.Bayer img {
+    width: 150px;
+    float: left;
+    margin-left: 75px;
+    margin-right: 100px;
+}
+
+.hsd img {
+    width: 300px;
+    float: left;
+    padding-left: 10px;
+}
+
+.hsd h2 {
+    padding-top: 17px;
+}
+
+.tierPoint img {
+    float: left;
+    width: 300px;
+    padding-left: 10px
+}
+
+.tierPoint h2 {
+    margin-top: 35px;
+    padding-top: 30px;
+}
+
+.MOHELA img {
+    float: left;
+    width: 200px;
+    padding-left: 60px;
+}
+
+.MOHELA h2 {
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+.MOHELA h5 {
+    margin-top: -15px;
+}
+
+.GoldSponsors h1 {
+    color: #D4AF37;
+    text-shadow: -1px 1px 3px #222222;
+}
+
+.SilverSponsors h1 {
+    color: #AAA9AD;
+    text-shadow: -1px 1px 3px #222222;
+}
+
+.BronzeSponsors h1 {
+    color: #CD7f32;
+    text-shadow: -1px 1px 3px #222222;
+}
+
+
+
+
+
+/*	Footer Section	*/
+
+.footerWrapper {
+    position: relative;
+    overflow-x: hidden;
+    display: contents;
+    width: 100vw;
+}
+
+.columnLeft {
+    width: 33%;
+    align-content: center;
+}
+
+.columnCenter {
+    width: 33%;
+    align-content: center;
+}
+
+.columnRight {
+    width: 33%;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    margin-left: -8px;
+    height: 60px;
+    clear: both;
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    align-content: center;
+    align-items: center;
+}
+
+.footer .social {
+    color: #ffffff;
+}
+
+.columnRight a:visited {
+    color: #ffffff;
+}
+
+.columnRight a:link {
+    color: #ffffff;
+}
+
+.columnRight a:hover {
+    color: #E42646;
+}
