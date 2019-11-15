@@ -156,6 +156,7 @@
 
 .boeing img {
     width: 300px;
+	margin-right: 10%;
 }
 
 .boeing h2 {
@@ -177,13 +178,18 @@
     width: 150px;
     float: left;
     margin-left: 75px;
-    margin-right: 100px;
+	margin-right: 10%;
+}
+
+.hsd {
+	margin-top: 10px;
 }
 
 .hsd img {
     width: 300px;
     float: left;
     padding-left: 10px;
+	margin-right: 10%;
 }
 
 .hsd h2 {
@@ -193,22 +199,27 @@
 .tierPoint img {
     float: left;
     width: 300px;
-    padding-left: 10px
+    padding-left: 10px;
+	margin-right: 10%;
 }
 
 .tierPoint h2 {
-    margin-top: 35px;
-    padding-top: 30px;
+    margin-top: 55px;
+    padding-top: 81px;
+}
+
+.MOHELA {
+	margin-top: 10px;
 }
 
 .MOHELA img {
     float: left;
     width: 200px;
-    padding-left: 60px;
+	padding-left: 10px;
+	margin-right: 10%;
 }
 
 .MOHELA h2 {
-    margin-top: 50px;
     padding-top: 30px;
 }
 
