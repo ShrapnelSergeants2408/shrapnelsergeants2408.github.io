@@ -1,6 +1,7 @@
 .fixed {
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .navbarBG {
@@ -120,16 +121,28 @@
 }
 
 /* Sponsorship Section */
+
 .sponsorList {
-    display: grid;
-    position: static;
-    align-content: center;
-    align-items: center;
-    width: 100%;
     padding-top: 60px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    align-content: center;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sponsorList hr {
+  width: 25%;
+}
+
+.sponsorList a {
+  color: #222222;
+}
+
+.sponsorList a:link {
+  color: #222222;
+}
+
+.sponsorList a:hover {
+  color: #E42646;
 }
 
 .DiamondSponsors {
@@ -143,28 +156,30 @@
 
 .DiamondSponsors hr {
     width: 55%;
-    margin-bottom: -40px;
-}
-
-.DiamondSponsors img {
-    float: left;
 }
 
 .DiamondSponsors p {
     vertical-align: middle;
 }
 
-.boeing img {
-    width: 300px;
-	margin-right: 10%;
+.boeingLogo {
+  width: 150px;
 }
 
-.boeing h2 {
-    padding-top: 70px;
+hr.seperationLine {
+  width: 100%;
+  border-style: dashed;
+  opacity: .15;
+  margin-top: 55px;
 }
+
+.ImageDisplayPlatinum {
+  display: inline-flex;
+}
+
 
 .PlatinumSponsors h1 {
-    margin-top: -35px;
+    margin-top: 9px;
     color: #E5E4E2;
     text-shadow: -1px 1px 3px #222222;
 }
@@ -174,53 +189,27 @@
     margin-bottom: 35px;
 }
 
-.Bayer img {
-    width: 150px;
-    float: left;
-    margin-left: 75px;
-	margin-right: 10%;
+hr.imageSep {
+    margin-top: 43px;
 }
 
-.hsd {
-	margin-top: 10px;
+.bayerLogo {
+  width: 116px;
+  margin-right: 27px;
 }
 
-.hsd img {
-    width: 300px;
-    float: left;
-    padding-left: 10px;
-	margin-right: 10%;
+.HSDImage {
+  width: 200px;
+  margin-right: 9px;
 }
 
-.hsd h2 {
-    padding-top: 17px;
+.TPImage {
+  width: 189px;
+
 }
 
-.tierPoint img {
-    float: left;
-    width: 300px;
-    padding-left: 10px;
-	margin-right: 10%;
-}
-
-.tierPoint h2 {
-    margin-top: 55px;
-    padding-top: 81px;
-}
-
-.MOHELA {
-	margin-top: 10px;
-}
-
-.MOHELA img {
-    float: left;
-    width: 200px;
-	padding-left: 10px;
-	margin-right: 10%;
-}
-
-.MOHELA h2 {
-    padding-top: 30px;
+.mohelaIMG {
+  width: 119px;
 }
 
 .MOHELA h5 {
@@ -230,6 +219,14 @@
 .GoldSponsors h1 {
     color: #D4AF37;
     text-shadow: -1px 1px 3px #222222;
+}
+
+.GoldSponsors hr {
+    width: 55%;
+}
+
+.GoldSponsors p {
+  margin-top: -20px;
 }
 
 .SilverSponsors h1 {
