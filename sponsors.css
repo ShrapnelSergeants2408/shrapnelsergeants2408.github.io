@@ -120,6 +120,48 @@
     color: #E42646 !important;
 }
 
+/*	Hero Section */
+
+.hero-section {
+  	width: 100%;
+  	background: linear-gradient(rgba(255, 0, 0, .5), rgba(0, 0, 255, .5)), url("robotics.JPG") 50% no-repeat;
+  	background-size: cover;
+  	padding-right: 16px;
+  	height: 67vh;
+  	text-align: center;
+  	margin-left: -8px;
+  	display: -webkit-flex;
+  	display: -ms-flexbox;
+  	display: flex;
+  	-webkit-align-items: center;
+  	-ms-flex-align: center;
+  	align-items: center;
+  	-webkit-justify-content: center;
+  	-ms-flex-pack: center;
+  	justify-content: center;
+}
+
+.hero-section .hero-section-text {
+	  color: #fefefe;
+	  text-shadow: 1px 1px 2px #0a0a0a;
+	  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-section .hero-section-text h1 {
+	  font-weight: 700;
+}
+
+.heroButton {
+    background-color: rgba(228, 38, 70, .75);
+    border: 4px solid rgba(255, 255, 255, .5);
+    border-radius: 5px;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 /* Sponsorship Section */
 
 .sponsorList {
