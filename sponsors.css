@@ -130,19 +130,19 @@
 }
 
 .sponsorList hr {
-  width: 25%;
+    width: 25%;
 }
 
 .sponsorList a {
-  color: #222222;
+    color: #222222;
 }
 
 .sponsorList a:link {
-  color: #222222;
+    color: #222222;
 }
 
 .sponsorList a:hover {
-  color: #E42646;
+    color: #E42646;
 }
 
 .DiamondSponsors {
@@ -163,18 +163,19 @@
 }
 
 .boeingLogo {
-  width: 150px;
+    width: 150px;
+    height: 150px;
 }
 
 hr.seperationLine {
-  width: 100%;
-  border-style: dashed;
-  opacity: .15;
-  margin-top: 55px;
+    width: 100%;
+    border-style: dashed;
+    opacity: .15;
+    margin-top: 55px;
 }
 
 .ImageDisplayPlatinum {
-  display: inline-flex;
+    display: inline-flex;
 }
 
 
@@ -189,27 +190,31 @@ hr.seperationLine {
     margin-bottom: 35px;
 }
 
-hr.imageSep {
+.PlatinumSponsors hr.imageSep {
     margin-top: 43px;
 }
 
 .bayerLogo {
-  width: 116px;
-  margin-right: 27px;
+    width: 116px;
+    height: 119px;
+    margin-right: 27px;
 }
 
 .HSDImage {
-  width: 200px;
-  margin-right: 9px;
+    width: 200px;
+    height: 119px;
+    margin-right: 9px;
 }
 
 .TPImage {
-  width: 189px;
-
+    width: 189px;
+    height: 119px;
+    margin-right: 9px;
 }
 
 .mohelaIMG {
-  width: 119px;
+    width: 119px;
+    height: 119px;
 }
 
 .MOHELA h5 {
@@ -226,7 +231,7 @@ hr.imageSep {
 }
 
 .GoldSponsors p {
-  margin-top: -20px;
+    margin-top: -20px;
 }
 
 .SilverSponsors h1 {
@@ -234,9 +239,36 @@ hr.imageSep {
     text-shadow: -1px 1px 3px #222222;
 }
 
+.SilverSponsors hr {
+    width: 55%;
+}
+
+.SilverSponsors hr.silverSep {
+    margin-bottom: 35px;
+}
+
+.SilverSponsors hr.imageSep {
+    margin-top: 33px;
+}
+
+.kfLogo {
+  width: 300px;
+  height: 100px;
+}
+
+.floPresLogo {
+  width: 438px;
+  height: 100px;
+}
+
 .BronzeSponsors h1 {
     color: #CD7f32;
     text-shadow: -1px 1px 3px #222222;
+}
+
+.wrightvisionLogo {
+  width: 300px;
+  height: 100px;
 }
 
 
