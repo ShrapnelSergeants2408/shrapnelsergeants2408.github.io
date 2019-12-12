@@ -220,6 +220,11 @@ hr.seperationLine {
     display: inline-flex;
 }
 
+.ImageDisplayPlatinumRow2 {
+	display: inline-flex;
+	padding-top: 15px;
+}
+
 
 .PlatinumSponsors h1 {
     margin-top: 9px;
@@ -242,6 +247,12 @@ hr.seperationLine {
     margin-right: 27px;
 }
 
+.emersonIMG {
+	width: 130px;
+	height: 125px;
+	margin-right: 9px;
+}
+
 .HSDImage {
     width: 200px;
     height: 119px;
@@ -257,6 +268,12 @@ hr.seperationLine {
 .mohelaIMG {
     width: 119px;
     height: 119px;
+	margin-right: 9px;
+}
+
+.ptcIMG {
+	width: 125px;
+	height: 125px;
 }
 
 .MOHELA h5 {
