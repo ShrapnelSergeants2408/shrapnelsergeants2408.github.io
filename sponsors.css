@@ -289,8 +289,21 @@ hr.seperationLine {
     width: 55%;
 }
 
+.GoldSponsors hr.goldSep {
+    margin-bottom: 10px;
+}
+
+.GoldSponsors hr.imageSep {
+    margin-top: 10px;
+}
+
+.hyperLogo {
+  width: 300px;
+  height: 125px;
+}
+
 .GoldSponsors p {
-    margin-top: -20px;
+    margin-top: -5px;
 }
 
 .SilverSponsors h1 {
