@@ -419,6 +419,22 @@ h3 {
 .sponsor-tier-silver h1 {
     color: #a4bdc9;
 }
+
+
+.sponsor-tier-bronze {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    overscroll-behavior-x: contain;
+}
+
+.sponsor-tier-bronze h1 {
+    color:#5f3927;
+}
 /*
 .card-grouping {
     display: flex;
