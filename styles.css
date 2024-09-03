@@ -1,0 +1,749 @@
+/*Baseline*/
+html {
+    scroll-behavior: smooth;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --dark-mode-background: #121212;
+    --dark-mode-primary: #E0E0E0;
+    --dark-mode-secondary: #B0B0B0;
+    --dark-mode-link: #fc8686;
+    --dark-mode-borders: #303030;
+
+    --light-mode-background: #FFFFFF;
+    --light-mode-primary: #212121;
+    --light-mode-secondary: #757575;
+    --light-mode-link: #1976D2;
+    --light-mode-borders: #cacaca;
+
+    --accent-color-red: #ff4040;
+    --accent-color-blue: #29B6F6;
+    --accent-color-twitch: #9146FF;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+[data-theme="dark"] {
+    --color-background: #121212;
+    --color-primary: #E0E0E0;
+    --color-secondary: #B0B0B0;
+    --color-link: #fc8686;
+    --color-borders: #303030;
+    --color-tertiary: #1f1f1f;
+}
+
+[data-theme="light"] {
+    --color-background: #FFFFFF;
+    --color-primary: #212121;
+    --color-secondary: #757575;
+    --color-link: #fc8686;
+    --color-borders: #cacaca;
+    --color-tertiary: #d2d7df;
+}
+
+.highlight {
+    color: var(--accent-color-red);
+    text-decoration: none;
+}
+
+/*Navbar Section*/
+
+button {
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+i {
+    background: transparent;
+    color: var(--color-primary);
+}
+
+i:hover {
+    color: var(--color-link);
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+.NAVBAR_CONTAINER {
+    background-color: var(--color-borders);
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.NAVBAR {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 29px;
+    height: 100px; /* Initial height for desktop view */
+    transition: height 0.3s ease; /* Smooth transition for height */
+}
+
+.NAVBAR ul {
+    display: flex;
+}
+
+.NAVBAR_CONTAINER .NAVBAR {
+    justify-content: space-between;
+}
+
+.NAVBAR_CONTAINER .NAVBAR ul li {
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.NAVBAR ul li {
+    list-style-type: none;
+}
+
+.NAVBAR a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.NAVBAR a:hover {
+    color: var(--color-link);
+}
+
+.NAVBAR img {
+    max-width: 60px;
+}
+
+.NAVBAR button {
+    font-size: 25px;
+}
+
+.HAMBURGER_MENU {
+    display: none;
+}
+
+/* Scrollbar Design */
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: var(--color-background);
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: var(--color-background);
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: var(--color-background);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--color-link);
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: var(--accent-color-red);
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: var(--accent-color-red);
+  }
+/*Homepage Styles*/
+/*Sections*/
+
+.content {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.hero-button {
+    text-decoration: none;
+    padding: 25px;
+    background-color: var(--color-borders);
+    border: none;
+    border-radius: 25px;
+    color: var(--color-primary);
+}
+
+.hero-button:hover {
+    color: var(--color-link);
+}
+.hero-button::after {
+    color: var(--color-primary);
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+h3 {
+    color: var(--color-secondary);
+}
+
+.about-info-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    width: 75vw;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+.about-section img {
+    width: 80%;
+}
+
+.sponsor-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    width: 75vw;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+.boeing-logo {
+    width: 25%;
+}
+
+.sponsor-buttons {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    font-size: 2rem;
+    width: 75vw;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+.event-section {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+.event-header {
+    padding-right: 50px;
+}
+
+/* About Styles */
+.about-overview {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.about-overview h1 {
+    padding-bottom: 50px;
+}
+.about-overview p {
+    font-size: 1.75rem;
+}
+
+.about-first {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.about-first h1 {
+    padding-bottom: 50px;
+}
+
+.about-first p {
+    font-size: 1.75rem;
+}
+
+/* Sponsor Styles */
+
+.sponsor-list-intro {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsor-list-intro h2 {
+    font-size: 1.75rem;
+}
+
+.sponsor-card-list {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    overflow: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    flex-shrink: 0;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.sponsor-card img {
+    width: 200px;
+}
+
+.sponsor-card-list > div {
+    scroll-snap-align: start;
+
+}
+
+.sponsor-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 370px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    background-color: var(--color-borders);
+    border-radius: 30px;
+}
+
+.sponsor-card-last {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-width: 370px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-bottom: 25px;
+    background-color: var(--color-borders);
+    border-radius: 30px;
+}
+
+
+.sponsor-tier-diamond {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    overscroll-behavior-x: contain;
+}
+
+.sponsor-tier-diamond h1 {
+    color: #29B6F6;
+}
+
+.sponsor-tier-platinum {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    overscroll-behavior-x: contain;
+}
+
+.sponsor-tier-platinum h1 {
+    color: #4e6570;
+}
+
+.sponsor-tier-gold {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    overscroll-behavior-x: contain;
+}
+
+.sponsor-tier-gold h1 {
+    color: #dab057;
+}
+
+.sponsor-tier-silver {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    overscroll-behavior-x: contain;
+}
+
+.sponsor-tier-silver h1 {
+    color: #a4bdc9;
+}
+/*
+.card-grouping {
+    display: flex;
+    flex-direction: row;
+
+}*/
+
+/* Sponsor Us Styles */
+
+.sponsor-us-intro {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsor-us-tier-info {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsor-us-tiers {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsor-us-diamond {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.sponsor-us-diamond h1 {
+    color: #29B6F6;
+}
+
+.sponsor-us-platinum {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.sponsor-us-platinum h1 {
+    color: #4e6570;
+}
+
+.sponsor-us-gold {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.sponsor-us-gold h1 {
+    color: #dab057;
+}
+
+.sponsor-us-silver {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.sponsor-us-silver h1 {
+    color: #a4bdc9;
+}
+
+.sponsor-us-bronze {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.sponsor-us-bronze h1 {
+    color:#5f3927;
+}
+/* Sub-Team Styles */
+
+.members-team-desc {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+}
+.members-team-desc img {
+    width: 37%;
+}
+
+.members-subteam-menu {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.members-subteam-menu a {
+    text-decoration: none;
+}
+.members-team-card a {
+    color: var(--color-primary);
+}
+.members-team-card a:hover {
+    color: var(--color-link);
+}
+.members-team-card a::after {
+    color: var(--color-primary);
+}
+.members-team-card h2 {
+    font-size: 2.5rem;
+}
+.members-team-card-last a {
+    color: var(--color-primary);
+}
+.members-team-card-last a:hover {
+    color: var(--color-link);
+}
+.members-team-card-last a::after {
+    color: var(--color-primary);
+}
+.members-team-card-list {
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    overflow: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    flex-shrink: 0;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    align-content: center;
+}
+
+.members-team-card img {
+    width: 200px;
+}
+
+.members-team-card-last img {
+    width: 200px;
+}
+.members-team-card-list > div {
+    scroll-snap-align: start;
+
+}
+
+.members-team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 370px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    background-color: var(--color-borders);
+    border-radius: 30px;
+}
+
+
+.members-team-card-last {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-width: 370px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-bottom: 25px;
+    background-color: var(--color-borders);
+    border-radius: 30px;
+}
+
+
+/*Dynamic Sizing*/
+@media screen and (max-width: 847px), (orientation: portrait){
+    .NAVBAR {
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Allow height to adjust automatically */
+    }
+
+    .NAVBAR ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .NAVBAR ul.show {
+        display: flex;
+        align-items: center;
+    }
+
+    .NAVBAR img {
+        padding-top: 10px;
+    }
+
+    .LIGHTSWITCH {
+        padding-top: 6px;
+    }
+
+    .HAMBURGER_MENU {
+        display: block;
+    }
+
+    .NAVBAR button {
+        padding-bottom: 15px;
+    }
+    /* Homepage Styles */
+    .about-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-section img {
+        width: 350px;
+    }
+
+    .event-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .event-header {
+        padding-right: 0px;
+    }
+
+    /* About Styles */
+
+
+    /* Sponsor list Styles */
+
+    .sponsor-card-list {
+        justify-content: flex-start;
+    }
+    .sponsor-card {
+        min-width: 220px;
+        align-items: center;
+        margin-left: 25px;
+    }
+
+    .sponsor-card-last {
+        min-width: 225px;
+        margin-right: 25px;
+        align-items: center;
+    }
+
+    .sponsor-card p {
+        padding-top: 25px;
+        font-size: 1.75rem;
+    }
+
+    /* Sponsor Us Styles */
+
+    .sponsor-us-diamond {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sponsor-us-tier-label {
+        margin-bottom: 50px;
+    }
+
+    .sponsor-us-platinum {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sponsor-us-gold {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sponsor-us-silver {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sponsor-us-bronze {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
