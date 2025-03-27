@@ -213,10 +213,12 @@ h3 {
     margin: 0 auto;
     align-items: center;
     color: var(--color-primary);
+    margin-left: 200px;
+    margin-right: 300px;
 }
 
 .about-section img {
-    width: 80%;
+    width: 65%;
 }
 
 .sponsor-section {
