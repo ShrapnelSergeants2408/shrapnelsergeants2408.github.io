@@ -328,6 +328,10 @@ h3 {
     width: 200px;
 }
 
+.sponsor-card-last img {
+    width: 200px;
+}
+
 .sponsor-card-list > div {
     scroll-snap-align: start;
 
