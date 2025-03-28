@@ -694,6 +694,10 @@ h3 {
         padding-bottom: 15px;
     }
     /* Homepage Styles */
+    .about-info-container {
+        margin: 0;
+    }
+
     .about-section {
         flex-direction: column-reverse;
         text-align: center;
